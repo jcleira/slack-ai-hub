@@ -58,8 +58,6 @@ func (s *Slack) Start(ctx context.Context, callback SlackCallback) error {
 			}
 		}
 	}
-
-	return nil
 }
 
 func (s *Slack) handleIncomingMessage(
