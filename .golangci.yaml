@@ -12,3 +12,30 @@ run:
   modules-download-mode: readonly
   allow-parallel-runners: false
   go: ""
+
+output:
+  # Format:  colored-line-number|line-number|json|colored-tab|tab|checkstyle|code-climate|junit-xml|github-actions|teamcity
+  # Default: colored-line-number
+  format: colored-line-number
+
+  # Print lines of code with issue.
+  # Default: true
+  print-issued-lines: false
+
+  # Print linter name in the end of issue text.
+  # Mandatory!
+  # Default: true
+  print-linter-name: true
+
+  # Make issues output unique by line.
+  # No, no skips, everything should be reported.
+  # Default: true
+  uniq-by-line: false
+
+  # Add a prefix to the output file references.
+  # To be honest no idea when this can be needed, maybe a multi-module setup?
+  path-prefix: ""
+
+  # Sort results by: filepath, line and column.
+  # Slightly easier to follow the results + getting deterministic output.
+  sort-results: true
